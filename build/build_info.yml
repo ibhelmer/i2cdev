@@ -1,0 +1,61 @@
+cmake:
+  application:
+    configuration-dir: '/home/ihn/zephyrproject/apps/nucleo_g474re_i2c_target'
+    source-dir: '/home/ihn/zephyrproject/apps/nucleo_g474re_i2c_target'
+  board:
+    name: 'nucleo_g474re'
+    path:
+     - '/home/ihn/zephyrproject/zephyr/boards/st/nucleo_g474re'
+    qualifiers: 'stm32g474xx'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/ihn/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/home/ihn/zephyrproject/zephyr/boards/st/nucleo_g474re/nucleo_g474re.dts'
+     - '/home/ihn/zephyrproject/apps/nucleo_g474re_i2c_target/boards/nucleo_g474re.overlay'
+    include-dirs:
+     - '/home/ihn/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/ihn/zephyrproject/modules/hal/atmel/include'
+     - '/home/ihn/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/ihn/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/ihn/zephyrproject/modules/hal/gigadevice/include'
+     - '/home/ihn/zephyrproject/modules/hal/microchip/include'
+     - '/home/ihn/zephyrproject/modules/hal/microchip/dts'
+     - '/home/ihn/zephyrproject/modules/hal/nuvoton/dts'
+     - '/home/ihn/zephyrproject/modules/hal/nxp/dts'
+     - '/home/ihn/zephyrproject/modules/hal/stm32/dts'
+     - '/home/ihn/zephyrproject/modules/hal/ti/dts'
+     - '/home/ihn/zephyrproject/zephyr/include'
+     - '/home/ihn/zephyrproject/zephyr/include/zephyr'
+     - '/home/ihn/zephyrproject/zephyr/dts/common'
+     - '/home/ihn/zephyrproject/zephyr/dts/vendor'
+     - '/home/ihn/zephyrproject/zephyr/dts/rx'
+     - '/home/ihn/zephyrproject/zephyr/dts/x86'
+     - '/home/ihn/zephyrproject/zephyr/dts/xtensa'
+     - '/home/ihn/zephyrproject/zephyr/dts/sparc'
+     - '/home/ihn/zephyrproject/zephyr/dts/riscv'
+     - '/home/ihn/zephyrproject/zephyr/dts/posix'
+     - '/home/ihn/zephyrproject/zephyr/dts/arm64'
+     - '/home/ihn/zephyrproject/zephyr/dts/arm'
+     - '/home/ihn/zephyrproject/zephyr/dts/arc'
+     - '/home/ihn/zephyrproject/zephyr/dts'
+    user-files:
+     - '/home/ihn/zephyrproject/apps/nucleo_g474re_i2c_target/boards/nucleo_g474re.overlay'
+  kconfig:
+    files:
+     - '/home/ihn/zephyrproject/zephyr/boards/st/nucleo_g474re/nucleo_g474re_defconfig'
+     - '/home/ihn/zephyrproject/apps/nucleo_g474re_i2c_target/prj.conf'
+    user-files:
+     - '/home/ihn/zephyrproject/apps/nucleo_g474re_i2c_target/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/ihn/zephyr-sdk-1.0.1'
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: '/home/ihn/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/ihn/zephyrproject/apps/nucleo_g474re_i2c_target/.venv/bin/west build -p always -b nucleo_g474re .'
+  topdir: '/home/ihn/zephyrproject'
+  version: '1.5.0'

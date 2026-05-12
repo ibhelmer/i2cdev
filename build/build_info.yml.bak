@@ -1,0 +1,5 @@
+west:
+  command: /home/ihn/zephyrproject/apps/nucleo_g474re_i2c_target/.venv/bin/west build
+    -p always -b nucleo_g474re .
+  topdir: /home/ihn/zephyrproject
+  version: 1.5.0
